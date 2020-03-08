@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main id="main">
+    <section id="portfolio"  class="section-bg" >
+        <br>
+        <div class="container">
+    
+          <header class="section-header">
+            <h3 class="section-title">Servicios</h3>
+          </header>
+    
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-emergencia">Emergencia</li>
+                <li data-filter=".filter-estetica">Estética</li>
+                <li data-filter=".filter-cuidados">Cuidados</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="row portfolio-container">
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-emergencia wow fadeInUp">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/servicio de emergencia.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/servicio de emergencia.jpg' %}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/1/#1" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Servicio de Emergencia</h4>
+                  <p>50 min | Bs 500.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cuidados wow fadeInUp" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/examenes de control.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/examenes de control.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/4/#4" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Exámenes de Control</h4>
+                  <p>1 hr | Bs 300.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-emergencia wow fadeInUp" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/vacuna.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/vacuna.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/2/#2" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Vacunas</h4>
+                  <p>20 min | Bs 200.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-estetica wow fadeInUp">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/servicios dentales.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/servicios dentales.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/7/#7" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Asistencia Dental</h4>
+                  <p>20 min | Bs 100.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cuidados wow fadeInUp" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/microchip.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/microchip.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/5/#5" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Micro Chips</h4>
+                  <p>20 min | Bs 200.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-emergencia wow fadeInUp" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/cirugia.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/cirugia.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/3/#3" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Cirujía</h4>
+                  <p>1 hr 30 min | Bs 1.000.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-estetica wow fadeInUp">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/aseo.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/aseo.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/8/#8" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Aseo</h4>
+                  <p>1 hr | Bs 100.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-estetica wow fadeInUp" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/estilista.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/estilista.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/9/#9" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Estilista</h4>
+                  <p>1 hr | Bs 300.000</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cuidados wow fadeInUp" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="{% static 'img/portfolio/pension.jpg' %}" class="img-fluid" alt="">
+                  <a href="{% static 'img/portfolio/pension.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Avance"><i class="ion ion-eye"></i></a>
+                  <a href="/cita/6/#6" class="link-details" title="Reservar"><i class="ion ion-android-open"></i></a>
+                </figure>
+    
+                <div class="portfolio-info">
+                  <h4 style="color: black;">Pensión</h4>
+                  <p>30 min | Bs 50.000</p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    </section>
+</main>
+{% endblock %}

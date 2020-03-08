@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h3>¿Preguntas?</h3>
+                <p>A usted se le permite realizar preguntas que seran consultadas en nuestra base de datos.</p>
+            </div>
+            <div class="form">
+                <form action="/respuesta/#facts" method="GET" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="pregunta" id="subject" placeholder="Pregunta" required/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center"><button type="submit">Enviar</button></div>
+                </form>
+            </div>
+        </div>
+  </section>
+{% endblock %}

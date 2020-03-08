@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    
+
+<section id="facts"  class="wow fadeIn">
+    <div class="container">
+
+        <header class="section-header">
+            <h3>¿Preguntas?</h3>
+            <p>A usted se le permite realizar preguntas que seran consultadas en nuestra base de datos. </p>
+            <p><strong>Usted busco {{query}}.</strong></p>
+            {% if respuestas %}
+                
+                {% for respuesta in respuestas %}
+                    <p><strong>{{respuesta.pregunta}}</strong></p>
+                    <p><strong>: {{respuesta.respuesta}}</strong></p>
+                {% endfor %}
+                {% else %}
+                    <p><strong>Su pregunta no se encuentra en nuestra base de datos. Si lo desea, las preguntas que no se encuentren en nuestra base de datos puede enviarnoslas a travez de comentario en la pagina de inicio con el asunto: ¿Preguntas?</strong></p>
+            {% endif %}
+            <p><a href="/pregunta/#contact" class="btn btn-square btn-success btn-lg" role="button" aria-pressed="true">Volver</a></p>
+        </header>
+    </div>
+</section><!-- #facts -->
+{% endblock %}
